@@ -3,7 +3,6 @@ class CreateSnippets < ActiveRecord::Migration
     create_table :snippets do |t|
       t.text :code
       t.string :author
-      t.date :created
 
       t.timestamps
     end

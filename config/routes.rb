@@ -1,4 +1,8 @@
 Codepad::Application.routes.draw do
+
+  resources :snippets
+
+  root to: "snippets#new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
