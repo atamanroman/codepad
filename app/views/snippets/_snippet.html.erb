@@ -1,4 +1,6 @@
-  Author: <%= @snippet.author %>
-  <div class="codeblock">
-    Code: <pre><%= @snippet.code %></pre>
-  </div>
+<script>hljs.initHighlightingOnLoad();</script>
+  <pre id="code"><code>// Author:        <%= @snippet.author %>
+// Title:         <%= @snippet.title %>
+// Created at:    <%= @snippet.created_at %>
+
+<%= @snippet.code %><code></pre>

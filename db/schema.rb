@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20131006004308) do
   create_table "snippets", force: true do |t|
     t.text     "code"
     t.string   "author"
+    t.string   "title"
     t.date     "created"
     t.datetime "created_at"
     t.datetime "updated_at"
