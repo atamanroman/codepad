@@ -12,18 +12,42 @@
  *= require_tree .
  */
 
-header {
-  color: #F0F0F0;
-  background: #C52F24;
-  padding: 0.5em 1.5em;
+body, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: solid 0.2em;
+}
+
+header#head {
+  background: MediumSeaGreen;
+  padding: 1em 1.6em;
+  border-bottom-color: SeaGreen;
+  border-bottom-width: 0.7em;
+  border-bottom-style: solid;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Verdana, Arial, Tahoma;
+  font-size: 1.6em;
 }
 
 header a {
-  text-decoration: none;
-  color: #F0F0F0;
+  color: White;
+}
+
+#code {
+  margin: 0;
 }
 
 #code code {
   margin: 0;
-  padding: 40px;
+  padding: 2em;
 }
