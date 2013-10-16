@@ -12,6 +12,10 @@
  *= require_tree .
  */
 
+body {
+  background-color: #f8f8ff;
+}
+
 body, p {
   margin: 0;
 }
@@ -50,4 +54,24 @@ header a {
 #code code {
   margin: 0;
   padding: 2em;
+}
+
+#create-snippet-form {
+  margin: 1em auto 0;
+  display: block;
+  width: 75%;
+}
+
+#create-snippet-form input, #create-snippet-form textarea {
+  margin: 0.3em;
+}
+
+#create-snippet-form input[type=text] {
+  width: 100%;
+}
+
+#create-snippet-form textarea {
+  width: 100%;
+  height: 20em;
+  resize: none;
 }
