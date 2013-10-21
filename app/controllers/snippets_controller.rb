@@ -10,8 +10,11 @@ class SnippetsController < ApplicationController
 
   def create
     from_params
-    @snippet.save
-    redirect_to @snippet
+    if @snippet.save
+      redirect_to @snippet
+    else
+      render :new
+    end
   end
 
   def show
@@ -19,13 +22,11 @@ class SnippetsController < ApplicationController
   end
 
   def edit
-    from_params_id
+    from_params_id # disable?
   end
 
   def update
-    from_params_id
-    @snippet.update(snippet_params)
-    redirect_to @snippet
+    from_params_id # disable?
   end
 
   private
