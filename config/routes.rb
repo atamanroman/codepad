@@ -1,6 +1,6 @@
 Codepad::Application.routes.draw do
 
-  resources :snippets
+  resources :snippets, except: [:edit, :update, :destroy]
 
   root to: "snippets#new"
   # The priority is based upon order of creation: first created -> highest priority.

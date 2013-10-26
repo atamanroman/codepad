@@ -21,14 +21,6 @@ class SnippetsController < ApplicationController
     from_params_id
   end
 
-  def edit
-    from_params_id # disable?
-  end
-
-  def update
-    from_params_id # disable?
-  end
-
   private
     def from_params
       @snippet = Snippet.new(snippet_params)
