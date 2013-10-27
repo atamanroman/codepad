@@ -35,6 +35,7 @@ header a {
 
 #code {
   margin: 0;
+  display: block;
 }
 
 #code code {
@@ -60,4 +61,18 @@ header a {
   width: 100%;
   height: 20em;
   resize: none;
+}
+
+#buttons {
+  position: relative;
+}
+
+#buttons .button_to, #buttons .button_to div {
+  display:inline;
+}
+
+#buttons input {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
 }

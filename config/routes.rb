@@ -1,6 +1,7 @@
 Codepad::Application.routes.draw do
 
   resources :snippets, except: [:edit, :update, :destroy]
+  get '/snippets/:id/clone' => 'snippets#clone'
 
   root to: "snippets#new"
   # The priority is based upon order of creation: first created -> highest priority.

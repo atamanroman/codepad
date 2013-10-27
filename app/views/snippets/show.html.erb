@@ -1,3 +1,4 @@
-<p>
-  <%= render @snippet %>
-</p>
+<div id='buttons'>
+  <%= button_to 'Clone', {action: 'clone'}, method: :get %>
+</div>
+<%= render @snippet %>

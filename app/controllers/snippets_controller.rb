@@ -21,6 +21,12 @@ class SnippetsController < ApplicationController
     from_params_id
   end
 
+  def clone
+    from_params_id
+    @snippet = @snippet.dup
+    render :new
+  end
+
   private
     def from_params
       @snippet = Snippet.new(snippet_params)
